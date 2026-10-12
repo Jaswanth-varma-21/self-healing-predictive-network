@@ -1,0 +1,6 @@
+# SDN runtime dependencies are best installed in a compatible, isolated environment.
+# Ryu / Mininet / Open vSwitch compatibility depends on OS and Python version.
+# Ryu 4.34 is most reliable on Python 3.8-3.9 with the eventlet pin below.
+# Use the project's existing Ryu environment where available (see scripts/setup_ryu_env.sh).
+eventlet==0.30.2
+ryu==4.34

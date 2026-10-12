@@ -1,0 +1,1 @@
+trial_id,scenario,system,actual_failure,predicted_failure,prediction_lead_time_seconds,root_cause_correct,recovery_time_ms,packet_loss_percent,latency_ms,throughput_mbps,availability_percent,false_recovery,evidence_reference,notes

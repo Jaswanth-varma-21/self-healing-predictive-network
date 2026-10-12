@@ -1,0 +1,59 @@
+{
+  "project": "Self-Healing Predictive Network Using Digital Twin and Causal AI",
+  "generated_at_utc": "2026-10-11T06:06:03.263567+00:00",
+  "validation_policy": "Never mark a live test PASS unless a recorded experiment provides evidence.",
+  "checks": [
+    {
+      "name": "required_project_files",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "telemetry_database",
+      "status": "PASS",
+      "tables": [
+        "causal_assessments",
+        "learning_feedback",
+        "prediction_results",
+        "recovery_decisions",
+        "sqlite_sequence",
+        "telemetry"
+      ],
+      "telemetry_rows": 70
+    },
+    {
+      "name": "unit_tests",
+      "status": "PASS",
+      "return_code": 0,
+      "output_tail": "\ntest_baseline_calculates_mean_and_count (test_baseline_statistics.TestBaselineStatistics.test_baseline_calculates_mean_and_count) ... ok\ntest_counter_deltas_for_normal_increment (test_counter_preprocessor.TestCounterPreprocessor.test_counter_deltas_for_normal_increment) ... ok\ntest_counter_reset_invalidates_all_deltas (test_counter_preprocessor.TestCounterPreprocessor.test_counter_reset_invalidates_all_deltas) ... ok\ntest_each_port_has_its_own_initial_observation (test_counter_preprocessor.TestCounterPreprocessor.test_each_port_has_its_own_initial_observation) ... ok\ntest_input_dataset_is_not_modified (test_counter_preprocessor.TestCounterPreprocessor.test_input_dataset_is_not_modified) ... ok\ntest_local_port_is_excluded (test_counter_preprocessor.TestCounterPreprocessor.test_local_port_is_excluded) ... ok\ntest_long_sampling_gap_is_flagged (test_counter_preprocessor.TestCounterPreprocessor.test_long_sampling_gap_is_flagged) ... ok\ntest_missing_required_column_raises_value_error (test_counter_preprocessor.TestCounterPreprocessor.test_missing_required_column_raises_value_error) ... ok\ntest_reset_during_long_gap_preserves_both_flags (test_counter_preprocessor.TestCounterPreprocessor.test_reset_during_long_gap_preserves_both_flags) ... ok\ntest_missing_binary_is_reported_not_raised (test_dashboard_port_discovery.TestOvsCommand.test_missing_binary_is_reported_not_raised) ... ok\ntest_no_sudo_for_root (test_dashboard_port_discovery.TestOvsCommand.test_no_sudo_for_root) ... ok\ntest_edge_order_matches_frontend (test_dashboard_port_discovery.TestPortDiscovery.test_edge_order_matches_frontend) ... ok\ntest_link_creation_order_s2_host_first (test_dashboard_port_discovery.TestPortDiscovery.test_link_creation_order_s2_host_first) ... ok\ntest_sorted_link_order_s2_host_second (test_dashboard_port_discovery.TestPortDiscovery.test_sorted_link_order_s2_host_second) ... ok\ntest_unrecognised_topology_falls_back (test_dashboard_port_discovery.TestPortDiscovery.test_unrecognised_topology_falls_back) ... ok\ntest_scenario_controls_are_simulation_only (test_live_demo.TestLiveDemoScenarios.test_scenario_controls_are_simulation_only) ... ok\ntest_unknown_scenario_is_rejected (test_live_demo.TestLiveDemoScenarios.test_unknown_scenario_is_rejected) ... ok\ntest_evidence_referenced_outcome_is_stored_without_approving_source (test_phase12_verified_integration.TestPhase12VerifiedIntegration.test_evidence_referenced_outcome_is_stored_without_approving_source) ... ok\ntest_missing_feature_or_evidence_rejected (test_phase12_verified_integration.TestPhase12VerifiedIntegration.test_missing_feature_or_evidence_rejected) ... ok\ntest_invalid_telemetry_rejected_before_database_write (test_phase13_telemetry_guard.TestTelemetryIngressGuard.test_invalid_telemetry_rejected_before_database_write) ... ok\ntest_audit_event_writes_jsonl (test_phase13_trust_layer.TestTrustLayer.test_audit_event_writes_jsonl) ... ok\ntest_module_authentication_is_constant_time_token_match (test_phase13_trust_layer.TestTrustLayer.test_module_authentication_is_constant_time_token_match) ... ok\ntest_reroute_requires_feasibility_and_path (test_phase13_trust_layer.TestTrustLayer.test_reroute_requires_feasibility_and_path) ... ok\ntest_route_must_be_discovered_and_loop_free (test_phase13_trust_layer.TestTrustLayer.test_route_must_be_discovered_and_loop_free) ... ok\ntest_stale_telemetry_is_rejected_when_freshness_is_required (test_phase13_trust_layer.TestTrustLayer.test_stale_telemetry_is_rejected_when_freshness_is_required) ... ok\ntest_telemetry_rejects_nonfinite_and_implausible_values (test_phase13_trust_layer.TestTrustLayer.test_telemetry_rejects_nonfinite_and_implausible_values) ... ok\ntest_baseline_and_proposed_are_compared_only_when_both_present (test_phase14_evaluation.TestPhase14Evaluation.test_baseline_and_proposed_are_compared_only_when_both_present) ... ok\ntest_classification_metrics (test_phase14_evaluation.TestPhase14Evaluation.test_classification_metrics) ... ok\ntest_report_writes_json_and_markdown (test_phase14_evaluation.TestPhase14Evaluation.test_report_writes_json_and_markdown) ... ok\ntest_unmeasured_values_are_not_invented (test_phase14_evaluation.TestPhase14Evaluation.test_unmeasured_values_are_not_invented) ... ok\ntest_invalid_topology_size_rejected (test_phase15_scale.TestPhase15Scale.test_invalid_topology_size_rejected) ... ok\ntest_scale_results_are_explicitly_simulated (test_phase15_scale.TestPhase15Scale.test_scale_results_are_explicitly_simulated) ... ok\ntest_single_ring_link_failure_preserves_reachability (test_phase15_scale.TestPhase15Scale.test_single_ring_link_failure_preserves_reachability) ... ok\ntest_counter_reset_is_not_scored (test_statistical_detector.TestStatisticalDetector.test_counter_reset_is_not_scored) ... ok\ntest_large_counter_spike_is_detected (test_statistical_detector.TestStatisticalDetector.test_large_counter_spike_is_detected) ... ok\ntest_long_sampling_gap_is_not_scored (test_statistical_detector.TestStatisticalDetector.test_long_sampling_gap_is_not_scored) ... ok\ntest_zero_standard_deviation_does_not_flag_anomaly (test_statistical_detector.TestStatisticalDetector.test_zero_standard_deviation_does_not_flag_anomaly) ... ok\n\n----------------------------------------------------------------------\nRan 37 tests in 0.141s\n\nOK\n"
+    },
+    {
+      "name": "live_mininet_baseline",
+      "status": "NOT_RUN",
+      "reason": "Must be executed with Ryu and Mininet running."
+    },
+    {
+      "name": "live_link_failure_and_restore",
+      "status": "NOT_RUN",
+      "reason": "Requires a timestamped live experiment."
+    },
+    {
+      "name": "live_congestion",
+      "status": "NOT_RUN",
+      "reason": "Requires controlled traffic generation and measured telemetry."
+    },
+    {
+      "name": "recovery_failure_and_rollback",
+      "status": "NOT_RUN",
+      "reason": "Requires a controlled failure-injection trial."
+    },
+    {
+      "name": "independent_phase12_learning_feedback",
+      "status": "PENDING",
+      "reason": "Trainer has no approved verification sources until evidence is reviewed."
+    }
+  ],
+  "software_checks_passed": 3,
+  "software_checks_failed": 0,
+  "live_test_status": "NOT_RUN"
+}

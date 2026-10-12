@@ -1,0 +1,76 @@
+{
+  "total_trials": 0,
+  "labelled_trials": 0,
+  "classification": null,
+  "prediction_lead_time_seconds": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "root_cause_accuracy": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "recovery_time_ms": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "packet_loss_percent": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "latency_ms": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "throughput_mbps": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "availability_percent": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "false_recovery_rate": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "min": null,
+    "max": null
+  },
+  "by_system": {},
+  "proposed_minus_baseline": {
+    "prediction_lead_time_seconds": null,
+    "recovery_time_ms": null,
+    "packet_loss_percent": null,
+    "latency_ms": null,
+    "throughput_mbps": null,
+    "availability_percent": null,
+    "false_recovery_rate": null,
+    "accuracy": null,
+    "precision": null,
+    "recall": null,
+    "f1": null
+  },
+  "evidence_note": "Metrics are calculated only from supplied trial rows. Comparison deltas are null unless both baseline and proposed measurements exist."
+}

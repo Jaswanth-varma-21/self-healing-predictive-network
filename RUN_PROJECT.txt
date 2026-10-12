@@ -1,0 +1,22 @@
+Self-Healing Predictive Network Using Digital Twin and Causal AI
+RUNNING THE DEMO
+
+1. Extract this ZIP.
+2. Open Ubuntu/WSL.
+3. Activate the Python environment (if you use it):
+   source /home/jashu/ryu-env/bin/activate
+4. Enter the extracted project directory. Example:
+   cd /mnt/c/Users/HP/OneDrive/Desktop/cn_project_fixed/cn_project
+   Adjust this path if you extracted somewhere else.
+5. Start the dashboard:
+   python3 demo/live_demo.py
+6. Open in your browser:
+   http://127.0.0.1:8765
+
+Keep the terminal open while using the dashboard. Stop it with Ctrl+C.
+
+LIVE NETWORK NOTES
+- Dashboard scenario buttons demonstrate digital-twin scenarios; do not assume they alter the real Mininet network.
+- For real link status, start the Ryu controller and Mininet topology as described in README.md.
+- If links show unknown, check that Mininet/OVS are running and accessible.
+- Learning readiness may remain GATED until enough independently verified feedback is recorded.

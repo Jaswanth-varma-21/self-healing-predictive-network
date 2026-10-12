@@ -1,0 +1,37 @@
+{
+  "experiment_type": "algorithmic_graph_simulation",
+  "not_live_mininet": true,
+  "results_by_node_count": {
+    "5": {
+      "trials": 10,
+      "reachable_trials": 10,
+      "reachability_rate": 1.0,
+      "mean_route_computation_ms": 0.004054
+    },
+    "10": {
+      "trials": 10,
+      "reachable_trials": 10,
+      "reachability_rate": 1.0,
+      "mean_route_computation_ms": 0.0024617
+    },
+    "20": {
+      "trials": 10,
+      "reachable_trials": 10,
+      "reachability_rate": 1.0,
+      "mean_route_computation_ms": 0.0025588
+    },
+    "50": {
+      "trials": 10,
+      "reachable_trials": 10,
+      "reachability_rate": 1.0,
+      "mean_route_computation_ms": 0.0025329000000000003
+    },
+    "100": {
+      "trials": 10,
+      "reachable_trials": 10,
+      "reachability_rate": 1.0,
+      "mean_route_computation_ms": 0.0025708000000000003
+    }
+  },
+  "interpretation": "Synthetic graph algorithm timings only; do not report as network recovery time."
+}

@@ -1,0 +1,13 @@
+SENTINEL TWIN - 1-PAGE DEMO CHEAT-SHEET   (full manual: LIVE_DEMO_README.md)
+
+Before:  bash scripts/check_env.sh          -> must end with "READY for the demo."
+T1:      bash scripts/start_controller.sh   (Ryu, start first)
+T2:      bash scripts/start_mininet.sh      (wait for mininet> prompt; pingall twice)
+T3:      bash scripts/start_dashboard.sh    -> browser http://127.0.0.1:8765
+T4:      bash scripts/collect_telemetry.sh  (live OVS counters)   bash scripts/show_evidence.sh
+
+Mininet: pingall | link s1 s2 down | h1 ping -c 5 h2 | link s1 s2 up | pingall | exit
+After:   sudo mn -c
+
+SAY OUT LOUD: dashboard topology = LIVE | scenario buttons = TWIN SIMULATION ONLY
+Never claim: recovery time, prediction accuracy, large-scale Mininet results (not measured).

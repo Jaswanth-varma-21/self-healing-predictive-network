@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "timestamp": null,
+  "source": null,
+  "node": null,
+  "metrics": {
+    "cpu_percent": null,
+    "memory_percent": null,
+    "memory_available_bytes": null,
+    "interface": null,
+    "interface_is_up": null,
+    "interface_speed_mbps": null,
+    "interface_mtu": null,
+    "rx_packets": null,
+    "rx_bytes": null,
+    "rx_dropped": null,
+    "rx_errors": null,
+    "tx_packets": null,
+    "tx_bytes": null,
+    "tx_dropped": null,
+    "tx_errors": null
+  }
+}
